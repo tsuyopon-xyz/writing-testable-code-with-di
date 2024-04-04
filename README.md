@@ -37,9 +37,9 @@ UserEntity, UserRepository, UserService の順番で実装を進めました。
 
 プルリクエストを確認していただくと、以下の順番で実装が進められているのが確認できるかと思います。
 
-- UserEntity の実装 #1
-- UserRepository の実装 #2
-- UserService の実装 #3
+- UserEntity の実装 (#1)
+- UserRepository の実装 (#2)
+- UserService の実装 (#3)
 
 この実装した順番には意味があり、他クラスへの依存が少ないものから実装を進めています。
 
