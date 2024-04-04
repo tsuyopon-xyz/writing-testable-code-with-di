@@ -1,7 +1,10 @@
 {
   "name": "writing-testable-code-with-di",
-  "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "test": "bun test",
+    "lint": "bunx @biomejs/biome check --apply src tests"
+  },
   "devDependencies": {
     "@biomejs/biome": "1.6.4",
     "@types/bun": "latest"

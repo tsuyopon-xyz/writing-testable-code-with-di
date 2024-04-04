@@ -22,6 +22,14 @@
     // Some stricter flags (disabled by default)
     "noUnusedLocals": false,
     "noUnusedParameters": false,
-    "noPropertyAccessFromIndexSignature": false
+    "noPropertyAccessFromIndexSignature": false,
+
+    // ここより上はbun initで最初からあった設定
+
+    // ここから下は新たに追加した設定
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": ["src/*"]
+    }
   }
 }
