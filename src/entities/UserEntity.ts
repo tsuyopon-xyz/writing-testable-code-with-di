@@ -1,7 +1,10 @@
-type UserType = {
-  id?: number;
+export type UserInputType = {
   name: string;
   age: number;
+};
+
+type UserEntityType = UserInputType & {
+  id?: number;
 };
 
 export default class UserEntity {
@@ -9,7 +12,7 @@ export default class UserEntity {
   public readonly name: string;
   public readonly age: number;
 
-  constructor({ id, name, age }: UserType) {
+  constructor({ id, name, age }: UserEntityType) {
     const trimmedName = name.trim();
 
     // 値オブジェクト化して値オブジェクトの方でバリデーションを行った方が綺麗かもしれない。
