@@ -23,6 +23,14 @@ describe('UserEntity', () => {
         expect(entity.age).toEqual(1);
       });
     });
+
+    describe('idに値があるパターン', () => {
+      it('nameが1文字以上, ageに0以上の整数を渡すとインスタンスが生成される', () => {
+        const entity = new UserEntity({ id: 1, name: 'a', age: 0 });
+
+        expect(entity.id).toEqual(1);
+      });
+    });
   });
 
   describe('異常系', () => {
