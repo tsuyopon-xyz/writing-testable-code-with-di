@@ -10,7 +10,7 @@
 - どのような手順で実装を進めているか
 - UserService と UserRepository を抽象に依存させている点
 
-### UserEntity, UserRepository, UserService の各クラスの関係
+## UserEntity, UserRepository, UserService の各クラスの関係
 
 各クラスの関係図は以下の通りです。
 
@@ -29,7 +29,7 @@ classDiagram
   UserService --> UserRepository : 依存
 ```
 
-### どのような手順で実装をすすめているか
+## どのような手順で実装をすすめているか
 
 Entity, Repository, Service の順番で実装を進めました。
 
@@ -57,7 +57,7 @@ Entity, Repository, Service の順番で実装を進めました。
 2. UserRepository を実装するには UserEntity が先に必要だよね
 3. UserEntity は特に依存するものがないから、最初に作り始めても問題ないよね
 
-### UserService と UserRepository を抽象に依存させている点
+## UserService と UserRepository を抽象に依存させている点
 
 冒頭の各クラスの関係を以下の図のように表しました。
 
