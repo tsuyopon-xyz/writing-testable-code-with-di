@@ -31,7 +31,7 @@ classDiagram
 
 ## どのような手順で実装をすすめているか
 
-Entity, Repository, Service の順番で実装を進めました。
+UserEntity, UserRepository, UserService の順番で実装を進めました。
 
 実際に開発を進めた時の詳細は[クローズされたプルリクエスト](https://github.com/tsuyopon-xyz/writing-testable-code-with-di/pulls?q=is%3Apr+is%3Aclosed)を参考にしていただけたらと思います。
 
